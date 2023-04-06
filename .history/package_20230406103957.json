@@ -1,0 +1,17 @@
+{
+  "name": "arposter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.2.1"
+  },
+  "dependencies": {
+    "mind-ar": "^1.2.1"
+  }
+}
