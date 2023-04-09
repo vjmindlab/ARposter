@@ -255,7 +255,7 @@
         <a-gltf-model
           id="questcenter"
           rotation="0 0 0 "
-          position="0 -0.35 0.1"
+          position="0 -0.2 0.1"
           scale="1.1 1.1 1.1"
           src="#quest"
           class="clickable"
@@ -290,7 +290,7 @@
             const obj = this.el.getObject3D('mesh');
             // Go over the submeshes and modify materials we want.
             obj.traverse((node) => {
-              if (node.name.indexOf('question') !== -1) {
+              if (node.name.indexOf('Object_2') !== -1) {
                 node.material.color.set(mat);
               }
             });
@@ -498,6 +498,19 @@
             }, 250);
         }
       });
+
+      window.addEventListener('orientationchange', () => {
+ //stop mindar
+ mindar.stop()
+
+ //ur function to hide 3D object (optional)
+
+ //restart mindar after 1 second delay
+ setTimeout(()=>{
+  mindar.start()
+ }, 1000)
+
+}, false)
     </script>
   </body>
 </html>
