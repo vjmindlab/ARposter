@@ -170,6 +170,7 @@
     >
       <a-assets>
         <img id="card" src="./Frame2.png" />
+        <img id="card2" src="./Frame3.png" />
         <a-asset-item id="quest" src="./question.glb"></a-asset-item>
         <a-asset-item id="ten" src="./10d.glb"></a-asset-item>
         <a-asset-item id="twenty" src="./20d.glb"></a-asset-item>
@@ -196,6 +197,19 @@
           height="1.5"
           width="1"
           rotation="0 0 0"
+          transparent="true"
+          opacity="1"
+          class="clickable"
+        ></a-plane>
+                <a-plane
+        id="cardp2"
+          src="#card2"
+          position="0 0 0"
+          height="1.5"
+          width="1"
+          rotation="0 0 0"
+          transparent="true"
+          opacity="0"
           class="clickable"
         ></a-plane>
         <a-gltf-model
@@ -311,6 +325,7 @@
       const quest1 = document.querySelector('#quest1');
       const quest2 = document.querySelector('#quest2');
       const card = document.querySelector('#cardp');
+      const card2 = document.querySelector('#cardp2');
 
       card.addEventListener('click', function (evt) {
         var rebate = Math.floor(Math.random() * (8 - 1)) + 1;
@@ -326,6 +341,14 @@
               questcenter.setAttribute(
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
               );
               ten.setAttribute(
                 'animation',
@@ -347,6 +370,14 @@
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
               );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
+              );
               twenty.setAttribute(
                 'animation',
                 'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
@@ -366,6 +397,14 @@
               questcenter.setAttribute(
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
               );
               thirty.setAttribute(
                 'animation',
@@ -387,6 +426,14 @@
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
               );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
+              );
               fourty.setAttribute(
                 'animation',
                 'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
@@ -406,6 +453,14 @@
               questcenter.setAttribute(
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
               );
               fifty.setAttribute(
                 'animation',
@@ -428,6 +483,14 @@
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
               );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
+              );
               sixty.setAttribute(
                 'animation',
                 'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
@@ -447,6 +510,14 @@
               questcenter.setAttribute(
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
               );
               seventy.setAttribute(
                 'animation',
@@ -468,6 +539,14 @@
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
               );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
+              );
               eighty.setAttribute(
                 'animation',
                 'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
@@ -488,6 +567,14 @@
                 'animation__2',
                 'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
               );
+              card.setAttribute(
+                'animation',
+                'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
+              );
+              card2.setAttribute(
+                'animation',
+                'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
+              );
               ten.setAttribute(
                 'animation',
                 'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
@@ -500,7 +587,7 @@
         }
       });
 
-      ScreenOrientation.addEventListener('change', function(e) {
+      ScreenOrientation.onchange = function(e) {
  //stop mindar
  mindar.stop()
 
@@ -511,7 +598,7 @@
   mindar.start()
  }, 1000)
 
-})
+}
     </script>
   </body>
 </html>
