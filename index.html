@@ -8,18 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.1/dist/mindar-image-aframe.prod.js"></script>
-    <script src="aframe-gif-shader.min.js"></script>
     <title>ARposter</title>
-    <!-- <script>
-      const star1 = document.querySelector('#star1');
-      const star2 = document.querySelector('#star2');
-      const card = document.querySelector('#card');
-
-      card.addEventListener('click', function (evt) {
-        console.log('star1');
-        star1.setAttribute('position', '0 0 0');
-      });
-    </script> -->
     <style>
       #scanning-overlay {
         display: flex;
@@ -120,7 +109,14 @@
       <a-assets>
         <img id="card" src="Frame2.png" />
         <a-asset-item id="quest" src="question.glb"></a-asset-item>
+        <a-asset-item id="ten" src="10.glb"></a-asset-item>
+        <a-asset-item id="twenty" src="20.glb"></a-asset-item>
+        <a-asset-item id="thirty" src="30.glb"></a-asset-item>
+        <a-asset-item id="fourty" src="40.glb"></a-asset-item>
         <a-asset-item id="fifty" src="50.glb"></a-asset-item>
+        <a-asset-item id="sixty" src="60.glb"></a-asset-item>
+        <a-asset-item id="seventy" src="70.glb"></a-asset-item>
+        <a-asset-item id="eighty" src="80.glb"></a-asset-item>
       </a-assets>
 
       <a-camera
@@ -139,11 +135,60 @@
           rotation="0 0 0"
         ></a-plane>
         <a-gltf-model
+          id="tenp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#ten"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="twentyp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#twenty"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="thirtyp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#thirty"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="fourtyp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#fourty"
+        ></a-gltf-model>
+        <a-gltf-model
           id="fiftyp"
           rotation="0 0 0 "
-          position="0 -0.35 0.1"
+          position="0 -0.26 0.1"
           scale="0 0 0"
           src="#fifty"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="sixtyp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#sixty"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="seventyp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#seventy"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="eightyp"
+          rotation="0 0 0 "
+          position="0 -0.26 0.1"
+          scale="0 0 0"
+          src="#eighty"
         ></a-gltf-model>
         <a-gltf-model
           id="questcenter"
@@ -192,30 +237,204 @@
       });
 
       const questcenter = document.querySelector('#questcenter');
+      const ten = document.querySelector('#tenp');
+      const twenty = document.querySelector('#twentyp');
+      const thirty = document.querySelector('#thirtyp');
+      const fourty = document.querySelector('#fourtyp');
       const fifty = document.querySelector('#fiftyp');
+      const sixty = document.querySelector('#sixtyp');
+      const seventy = document.querySelector('#seventyp');
+      const eighty = document.querySelector('#eightyp');
       const quest1 = document.querySelector('#quest1');
       const quest2 = document.querySelector('#quest2');
       const card = document.querySelector('#card');
 
       questcenter.addEventListener('click', function (evt) {
-        questcenter.setAttribute(
-          'animation',
-          'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
-        );
-        setTimeout(() => {
-          questcenter.setAttribute(
-            'animation__2',
-            'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
-          );
-          fifty.setAttribute(
-            'animation',
-            'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
-          );
-          fifty.setAttribute(
-            'animation__2',
-            'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
-          );
-        }, 250);
+        var rebate = Math.floor(Math.random() * (8 - 1)) + 1;
+        console.log(rebate);
+
+        switch (rebate) {
+          case 1:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              ten.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              ten.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          case 2:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              twenty.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              twenty.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          case 3:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              thirty.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              thirty.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          case 4:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              fourty.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              fourty.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          case 5:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              fifty.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              fifty.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+
+            break;
+          case 6:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              sixty.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              sixty.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          case 7:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              seventy.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              seventy.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          case 8:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              eighty.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              eighty.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+            break;
+          default:
+            questcenter.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+            );
+            setTimeout(() => {
+              questcenter.setAttribute(
+                'animation__2',
+                'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+              );
+              ten.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              ten.setAttribute(
+                'animation__2',
+                'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
+              );
+            }, 250);
+        }
       });
     </script>
   </body>
