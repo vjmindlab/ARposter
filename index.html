@@ -11,9 +11,15 @@
     <title>ARposter</title>
     <style>
       #scanning-overlay {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: absolute;
         left: 0;
         right: 0;
@@ -36,10 +42,35 @@
       }
 
       #scanning-overlay .inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: relative;
+
+        background: -o-linear-gradient(
+              left,
+              white 10px,
+              transparent 10px
+            )
+            0 0,
+          -o-linear-gradient(left, white 10px, transparent 10px) 0
+            100%,
+          -o-linear-gradient(right, white 10px, transparent 10px) 100%
+            0,
+          -o-linear-gradient(right, white 10px, transparent 10px) 100%
+            100%,
+          -o-linear-gradient(top, white 10px, transparent 10px) 0 0,
+          -o-linear-gradient(top, white 10px, transparent 10px)
+            100% 0,
+          -o-linear-gradient(bottom, white 10px, transparent 10px) 0 100%,
+          -o-linear-gradient(bottom, white 10px, transparent 10px) 100%
+            100%;
 
         background: linear-gradient(
               to right,
@@ -70,7 +101,9 @@
       #scanning-overlay img {
         opacity: 0.6;
         width: 80%;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
       }
 
       #scanning-overlay .inner .scanline {
@@ -78,7 +111,17 @@
         width: 100%;
         height: 10px;
         background: white;
-        animation: move 4s linear infinite;
+        -webkit-animation: move 4s linear infinite;
+                animation: move 4s linear infinite;
+      }
+      @-webkit-keyframes move {
+        0%,
+        100% {
+          top: 0%;
+        }
+        50% {
+          top: calc(100% - 10px);
+        }
       }
       @keyframes move {
         0%,
@@ -107,16 +150,16 @@
       gltf-model="dracoDecoderPath: ;"
     >
       <a-assets>
-        <img id="card" src="Frame2.png" />
-        <a-asset-item id="quest" src="question.glb"></a-asset-item>
-        <a-asset-item id="ten" src="10d.glb"></a-asset-item>
-        <a-asset-item id="twenty" src="20d.glb"></a-asset-item>
-        <a-asset-item id="thirty" src="30d.glb"></a-asset-item>
-        <a-asset-item id="fourty" src="40d.glb"></a-asset-item>
-        <a-asset-item id="fifty" src="50d.glb"></a-asset-item>
-        <a-asset-item id="sixty" src="60d.glb"></a-asset-item>
-        <a-asset-item id="seventy" src="70d.glb"></a-asset-item>
-        <a-asset-item id="eighty" src="80d.glb"></a-asset-item>
+        <img id="card" src="./Frame2.png" />
+        <a-asset-item id="quest" src="./question.glb"></a-asset-item>
+        <a-asset-item id="ten" src="./10d.glb"></a-asset-item>
+        <a-asset-item id="twenty" src="./20d.glb"></a-asset-item>
+        <a-asset-item id="thirty" src="./30d.glb"></a-asset-item>
+        <a-asset-item id="fourty" src="./40d.glb"></a-asset-item>
+        <a-asset-item id="fifty" src="./50d.glb"></a-asset-item>
+        <a-asset-item id="sixty" src="./60d.glb"></a-asset-item>
+        <a-asset-item id="seventy" src="./70d.glb"></a-asset-item>
+        <a-asset-item id="eighty" src="./80d.glb"></a-asset-item>
       </a-assets>
 
       <a-camera
