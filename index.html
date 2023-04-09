@@ -195,6 +195,7 @@
           height="1.5"
           width="1"
           rotation="0 0 0"
+          class="clickable"
         ></a-plane>
         <a-gltf-model
           id="tenp"
@@ -258,7 +259,6 @@
           position="0 -0.2 0.1"
           scale="1.1 1.1 1.1"
           src="#quest"
-          class="clickable"
           modify-materials
         ></a-gltf-model>
         <a-gltf-model
@@ -311,7 +311,7 @@
       const quest2 = document.querySelector('#quest2');
       const card = document.querySelector('#card');
 
-      questcenter.addEventListener('click', function (evt) {
+      card.addEventListener('click', function (evt) {
         var rebate = Math.floor(Math.random() * (8 - 1)) + 1;
         console.log(rebate);
 
