@@ -190,6 +190,7 @@
       </a-camera>
       <a-entity mindar-image-target="targetIndex: 0">
         <a-plane
+        id="cardp"
           src="#card"
           position="0 0 0"
           height="1.5"
@@ -309,7 +310,7 @@
       const eighty = document.querySelector('#eightyp');
       const quest1 = document.querySelector('#quest1');
       const quest2 = document.querySelector('#quest2');
-      const card = document.querySelector('#card');
+      const card = document.querySelector('#cardp');
 
       card.addEventListener('click', function (evt) {
         var rebate = Math.floor(Math.random() * (8 - 1)) + 1;
