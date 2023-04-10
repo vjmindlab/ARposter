@@ -431,6 +431,7 @@
 
       card.addEventListener('click', function (evt) {
         var rebate = Math.floor(Math.random() * (8 - 1)) + 1;
+        localStorage.setItem('voucher', rebate);
         console.log(rebate);
 
         switch (rebate) {
@@ -1109,6 +1110,10 @@
               }, 500);
             }, 250);
         }
+      });
+
+      card2.addEventListener('click', function (evt) {
+        window.location.replace('./voucher.html');
       });
 
       // ScreenOrientation.onchange = function (e) {
