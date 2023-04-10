@@ -365,7 +365,7 @@
         <a-gltf-model
           id="quest1"
           rotation="0 0 0 "
-          position="0.8 0 0.2"
+          position="0.9 0.2 0.2"
           scale="1 1 1"
           src="#quest"
           animation="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true;"
@@ -379,9 +379,17 @@
           animation="property: rotation; to: 0 -360 30; dur: 2000; easing: linear; loop: true;"
         ></a-gltf-model>
         <a-gltf-model
+          id="quest3"
+          rotation="0 0 -30 "
+          position="0.7 -0.5 0.5"
+          scale="1.2 1.2 1.2"
+          src="#quest"
+          animation="property: rotation; to: 0 360 -30; dur: 2000; easing: linear; loop: true;"
+        ></a-gltf-model>
+        <a-gltf-model
           id="star1"
           rotation="0 0 0 "
-          position="0.8 0 0.2"
+          position="0.9 0.2 0.2"
           scale="0 0 0"
           src="#star"
         ></a-gltf-model>
@@ -389,6 +397,13 @@
           id="star2"
           rotation="0 0 30 "
           position="-0.6 0.5 0.5"
+          scale="0 0 0"
+          src="#star"
+        ></a-gltf-model>
+        <a-gltf-model
+          id="star3"
+          rotation="0 0 -30 "
+          position="0.7 -0.5 0.5"
           scale="0 0 0"
           src="#star"
         ></a-gltf-model>
@@ -458,6 +473,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -506,6 +530,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -528,8 +566,16 @@
               'animation',
               'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
             );
-
             quest2.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
@@ -581,6 +627,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -608,6 +668,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -656,6 +725,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -683,6 +766,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -731,6 +823,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -758,6 +864,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -806,6 +921,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -833,6 +962,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -881,6 +1019,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -908,6 +1060,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -956,6 +1117,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -983,6 +1158,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -1031,6 +1215,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
@@ -1058,6 +1256,15 @@
               'animation__2',
               'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
             );
+            quest3.setAttribute(
+              'animation',
+              'property: rotation; to: 0 1440 -30; dur: 500; easing: linear; loop: false'
+            );
+
+            quest3.setAttribute(
+              'animation__2',
+              'property: scale; to: 0 0 0; dur: 500; easing: linear; loop: false'
+            );
             setTimeout(() => {
               questcenter.setAttribute(
                 'animation__2',
@@ -1106,6 +1313,20 @@
                 star2.setAttribute(
                   'animation__2',
                   'property: rotation; to: 0 -360 30; dur: 10000; easing: linear; loop: true'
+                );
+              }, 500);
+              star3.setAttribute(
+                'animation',
+                'property: rotation; to: 0 1440 0; dur: 500; easing: linear; loop: false'
+              );
+              star3.setAttribute(
+                'animation__2',
+                'property: scale; to: 1.2 1.2 1.2; dur: 500; easing: linear; loop: false'
+              );
+              setTimeout(() => {
+                star3.setAttribute(
+                  'animation__2',
+                  'property: rotation; to: 0 360 -30; dur: 10000; easing: linear; loop: true'
                 );
               }, 500);
             }, 250);
