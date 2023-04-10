@@ -5,183 +5,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>ARposter</title>
+    <title>Taktical AR Poster</title>
     <script src="./html2canvas.min.js"></script>
     <script>
-      window.onload = function () {
-        var rebate = localStorage.getItem('voucher');
-        var serial = Math.floor(Math.random() * (100000 - 1)) + 1;
-        console.log(rebate);
-        const h1 = document.querySelector('h1');
-        const h3 = document.querySelector('h3');
-        const barcode = document.querySelector('#barcode');
-
-        switch (rebate) {
-          case '1':
-            h1.innerText = '10% REBATE';
-            barcode.setAttribute('src', './10barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '2':
-            h1.innerText = '20% REBATE';
-            barcode.setAttribute('src', './20barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '3':
-            h1.innerText = '30% REBATE';
-            barcode.setAttribute('src', './30barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '4':
-            h1.innerText = '40% REBATE';
-            barcode.setAttribute('src', './40barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '5':
-            h1.innerText = '50% REBATE';
-            barcode.setAttribute('src', './50barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '6':
-            h1.innerText = '60% REBATE';
-            barcode.setAttribute('src', './60barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '7':
-            h1.innerText = '70% REBATE';
-            barcode.setAttribute('src', './70barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          case '8':
-            h1.innerText = '80% REBATE';
-            barcode.setAttribute('src', './80barcode.png');
-            h3.innerText = 'Serial No: ' + serial;
-            break;
-          //   default:
-          //     h1.innerText = 'REBATE';
-          //     barcode.setAttribute('src', './10barcode.png');
-        }
-
-        var objToday = new Date(),
-          weekday = new Array(
-            'Sunday',
-            'Monday',
-            'Tuesday',
-            'Wednesday',
-            'Thursday',
-            'Friday',
-            'Saturday'
-          ),
-          dayOfWeek = weekday[objToday.getDay()],
-          domEnder = (function () {
-            var a = objToday;
-            if (/1/.test(parseInt((a + '').charAt(0)))) return '';
-            a = parseInt((a + '').charAt(1));
-            return 1 == a ? '' : 2 == a ? '' : 3 == a ? '' : '';
-          })(),
-          dayOfMonth =
-            today + (objToday.getDate() < 10)
-              ? '0' + objToday.getDate() + domEnder
-              : objToday.getDate() + domEnder,
-          months = new Array(
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-            'July',
-            'August',
-            'September',
-            'October',
-            'November',
-            'December'
-          ),
-          curMonth = months[objToday.getMonth()],
-          curYear = objToday.getFullYear(),
-          curHour =
-            objToday.getHours() > 12
-              ? objToday.getHours() - 12
-              : objToday.getHours() < 10
-              ? '0' + objToday.getHours()
-              : objToday.getHours(),
-          curMinute =
-            objToday.getMinutes() < 10
-              ? '0' + objToday.getMinutes()
-              : objToday.getMinutes(),
-          curSeconds =
-            objToday.getSeconds() < 10
-              ? '0' + objToday.getSeconds()
-              : objToday.getSeconds(),
-          curMeridiem = objToday.getHours() > 12 ? 'PM' : 'AM';
-        var today =
-          //   curHour +
-          //   ':' +
-          //   curMinute +
-          //   '.' +
-          //   curSeconds +
-          //   curMeridiem +
-          //   ' ' +
-          dayOfWeek +
-          ' ' +
-          curMonth +
-          ' ' +
-          dayOfMonth +
-          ', ' +
-          curYear;
-
-        document.getElementsByTagName('h2')[0].textContent =
-          'Valid Only ' + today;
-      };
+ window.onload=function(){var e=localStorage.getItem("voucher"),t=Math.floor(99999*Math.random())+1;console.log(e);let r=document.querySelector("h1"),a=document.querySelector("h3"),n=document.querySelector("#barcode");switch(e){case"1":r.innerText="10% REBATE",n.setAttribute("src","./10barcode.png"),a.innerText="Serial No: "+t;break;case"2":r.innerText="20% REBATE",n.setAttribute("src","./20barcode.png"),a.innerText="Serial No: "+t;break;case"3":r.innerText="30% REBATE",n.setAttribute("src","./30barcode.png"),a.innerText="Serial No: "+t;break;case"4":r.innerText="40% REBATE",n.setAttribute("src","./40barcode.png"),a.innerText="Serial No: "+t;break;case"5":r.innerText="50% REBATE",n.setAttribute("src","./50barcode.png"),a.innerText="Serial No: "+t;break;case"6":r.innerText="60% REBATE",n.setAttribute("src","./60barcode.png"),a.innerText="Serial No: "+t;break;case"7":r.innerText="70% REBATE",n.setAttribute("src","./70barcode.png"),a.innerText="Serial No: "+t;break;case"8":r.innerText="80% REBATE",n.setAttribute("src","./80barcode.png"),a.innerText="Serial No: "+t}var i,o=new Date,s=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][o.getDay()],c=(i=o,/1/.test(parseInt((i+"").charAt(0)))||1==(i=parseInt((i+"").charAt(1))),""),u=T+(10>o.getDate())?"0"+o.getDate()+c:o.getDate()+c,b=["January","February","March","April","May","June","July","August","September","October","November","December"][o.getMonth()],g=o.getFullYear();o.getHours()>12||o.getHours(),o.getHours(),o.getMinutes(),o.getMinutes(),o.getSeconds(),o.getSeconds(),o.getHours();var T=s+" "+b+" "+u+", "+g;document.getElementsByTagName("h2")[0].textContent="Valid Only "+T};
     </script>
     <style>
-      body,
-      html {
-        width: 100vw;
-        height: 100dvh;
-        background-image: url(./voucher_back.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: aliceblue;
-        overflow: hidden;
-      }
-
-      .title {
-        max-width: 300px;
-      }
-
-      #barcode {
-        max-width: 250px;
-      }
-
-      h1 {
-        font-size: 2rem;
-        font-weight: 800;
-      }
-
-      h2 {
-        font-size: 1rem;
-      }
-
-      button {
-        background-color: rgb(255, 0, 43);
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border: none;
-        color: white;
-        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.384);
-        font-weight: 800;
-        cursor: pointer;
-      }
-
-      button:active {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0.384);
-      }
+button,h1{font-weight:800}body,html{width:100vw;height:100dvh;background-image:url(./voucher_back.png);background-repeat:no-repeat;background-size:100% 100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Arial,Helvetica,sans-serif;color:#f0f8ff;overflow:hidden}.title{max-width:300px}#barcode{max-width:250px}h1{font-size:2rem}h2{font-size:1rem}button{background-color:#ff002b;padding:1rem;border-radius:.5rem;border:none;color:#fff;box-shadow:0 2px 1px rgba(0,0,0,.384);cursor:pointer}button:active{box-shadow:0 0 0 rgba(0,0,0,.384)}
     </style>
   </head>
   <body>
@@ -195,21 +25,7 @@
     </button>
 
     <script>
-      function saveScreenshot(canvas) {
-        const fileName = 'mistery_sale_voucher';
-        const link = document.createElement('a');
-        link.download = fileName + '.png';
-        canvas.toBlob(function (blob) {
-          console.log(blob);
-          link.href = URL.createObjectURL(blob);
-          link.click();
-        });
-      }
-
-      const Btn = document.querySelector('#buton');
-      Btn.addEventListener('click', function (evt) {
-        html2canvas(document.body).then(saveScreenshot);
-      });
+function saveScreenshot(e){let t=document.createElement("a");t.download="mistery_sale_voucher.png",e.toBlob(function(e){console.log(e),t.href=URL.createObjectURL(e),t.click()})}const Btn=document.querySelector("#buton");Btn.addEventListener("click",function(e){html2canvas(document.body).then(saveScreenshot)});
     </script>
   </body>
 </html>
