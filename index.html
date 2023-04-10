@@ -422,6 +422,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -434,9 +435,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 2:
@@ -453,6 +451,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -465,9 +464,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 3:
@@ -484,6 +480,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -496,9 +493,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 4:
@@ -515,6 +509,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -527,9 +522,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 5:
@@ -546,6 +538,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -558,9 +551,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 6:
@@ -577,6 +567,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -589,9 +580,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 7:
@@ -608,6 +596,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -620,9 +609,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           case 8:
@@ -639,6 +625,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -651,9 +638,6 @@
                 'animation__2',
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
-            }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
             }, 250);
             break;
           default:
@@ -670,6 +654,7 @@
                 'animation',
                 'property: opacity; to: 0; dur: 500; easing: linear; loop: false'
               );
+              card.removeAttribute('class');
               card2.setAttribute(
                 'animation',
                 'property: opacity; to: 1; dur: 500; easing: linear; loop: false'
@@ -683,25 +668,22 @@
                 'property: scale; to: 1 1 1; dur: 500; easing: linear; loop: false'
               );
             }, 250);
-            setTimeout(() => {
-              card.removeAttribute('class');
-            }, 250);
         }
       });
 
-      ScreenOrientation.onchange = function (e) {
-        const sceneEl = document.querySelector('a-scene');
-        const arSystem = sceneEl.systems['mindar-image-system'];
-        //stop mindar
-        arSystem.stop();
+      // ScreenOrientation.onchange = function (e) {
+      //   const sceneEl = document.querySelector('a-scene');
+      //   const arSystem = sceneEl.systems['mindar-image-system'];
+      //   //stop mindar
+      //   arSystem.stop();
 
-        //ur function to hide 3D object (optional)
+      //   //ur function to hide 3D object (optional)
 
-        //restart mindar after 1 second delay
-        setTimeout(() => {
-          arSystem.start();
-        }, 1000);
-      };
+      //   //restart mindar after 1 second delay
+      //   setTimeout(() => {
+      //     arSystem.start();
+      //   }, 1000);
+      // };
     </script>
   </body>
 </html>
