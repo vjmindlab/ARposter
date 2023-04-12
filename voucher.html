@@ -13,200 +13,10 @@
       src="https://api.countapi.xyz/hit/vjmindlab.github.io/visits?callback=cb"
     ></script>
     <script>
-      let co;
-      function cb(response) {
-        co = response.value;
-        return co;
-      }
-
-      window.onload = function () {
-        var e = localStorage.getItem('voucher'),
-          t = Math.floor(99999 * Math.random()) + 1;
-        console.log(e);
-        let r = document.querySelector('h1'),
-          a = document.querySelector('h3');
-        n = document.querySelector('#barcode');
-        var d = new Date().toISOString().slice(0, 10);
-        switch (e) {
-          case '1':
-            (r.innerText = '10% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '10';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '2':
-            (r.innerText = '20% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '20';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '3':
-            (r.innerText = '30% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '30';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '4':
-            (r.innerText = '40% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '40';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '5':
-            (r.innerText = '50% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '50';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '6':
-            (r.innerText = '60% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '60';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '7':
-            (r.innerText = '70% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '70';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-            break;
-          case '8':
-            (r.innerText = '80% REBATE'),
-              (a.innerText = 'Serial No: ' + co);
-            var s = '80';
-            var w = s + co + ' ' + d;
-            JsBarcode('#barcode', w, {
-              lineColor: '#000',
-              width: 1,
-              height: 100,
-            });
-        }
-        var i,
-          o = new Date(),
-          s = [
-            'Sunday',
-            'Monday',
-            'Tuesday',
-            'Wednesday',
-            'Thursday',
-            'Friday',
-            'Saturday',
-          ][o.getDay()],
-          c =
-            ((i = o),
-            /1/.test(parseInt((i + '').charAt(0))) ||
-              1 == (i = parseInt((i + '').charAt(1))),
-            ''),
-          u =
-            T + (10 > o.getDate())
-              ? '0' + o.getDate() + c
-              : o.getDate() + c,
-          b = [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
-            'July',
-            'August',
-            'September',
-            'October',
-            'November',
-            'December',
-          ][o.getMonth()],
-          g = o.getFullYear();
-        o.getHours() > 12 || o.getHours(),
-          o.getHours(),
-          o.getMinutes(),
-          o.getMinutes(),
-          o.getSeconds(),
-          o.getSeconds(),
-          o.getHours();
-        var T = s + ' ' + b + ' ' + u + ', ' + g;
-        document.getElementsByTagName('h2')[0].textContent =
-          'Valid Only ' + T;
-      };
+let co;function cb(e){return co=e.value}window.onload=function(){var e=localStorage.getItem("voucher");console.log(e);let r=document.querySelector("h1"),t=document.querySelector("h3");n=document.querySelector("#barcode");var o=new Date().toISOString().slice(0,10);switch(e){case"1":r.innerText="10% REBATE",t.innerText="Serial No: "+co;var a="10",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"2":r.innerText="20% REBATE",t.innerText="Serial No: "+co;var a="20",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"3":r.innerText="30% REBATE",t.innerText="Serial No: "+co;var a="30",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"4":r.innerText="40% REBATE",t.innerText="Serial No: "+co;var a="40",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"5":r.innerText="50% REBATE",t.innerText="Serial No: "+co;var a="50",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"6":r.innerText="60% REBATE",t.innerText="Serial No: "+co;var a="60",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"7":r.innerText="70% REBATE",t.innerText="Serial No: "+co;var a="70",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100});break;case"8":r.innerText="80% REBATE",t.innerText="Serial No: "+co;var a="80",$=a+co+" "+o;JsBarcode("#barcode",$,{lineColor:"#000",width:1,height:100})}var i,c=new Date,a=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",][c.getDay()],l=(i=c,/1/.test(parseInt((i+"").charAt(0)))||(i=parseInt((i+"").charAt(1))),""),h=T+(10>c.getDate())?"0"+c.getDate()+l:c.getDate()+l,d=["January","February","March","April","May","June","July","August","September","October","November","December",][c.getMonth()],g=c.getFullYear();c.getHours()>12||c.getHours(),c.getHours(),c.getMinutes(),c.getMinutes(),c.getSeconds(),c.getSeconds(),c.getHours();var T=a+" "+d+" "+h+", "+g;document.getElementsByTagName("h2")[0].textContent="Valid Only "+T};
     </script>
     <style>
-      button,
-      h1 {
-        font-weight: 800;
-      }
-      body,
-      html {
-        width: 100vw;
-        height: 100dvh;
-        background-image: url(./voucher_back.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #f0f8ff;
-        overflow: hidden;
-      }
-      .title {
-        max-width: 300px;
-      }
-      #barcode {
-        max-width: 350px;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1rem;
-      }
-      button {
-        background-color: #ff002b;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border: none;
-        color: #fff;
-        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.384);
-        cursor: pointer;
-      }
-      button:active {
-        box-shadow: 0 0 0 rgba(0, 0, 0, 0.384);
-      }
+button,h1{font-weight:800}body,html{width:100vw;height:100dvh;background-image:url(./voucher_back.png);background-repeat:no-repeat;background-size:100% 100%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Arial,Helvetica,sans-serif;color:#f0f8ff;overflow:hidden}.title{max-width:300px}#barcode{max-width:350px}h1{font-size:2rem}h2{font-size:1rem}button{background-color:#ff002b;padding:1rem;border-radius:.5rem;border:none;color:#fff;box-shadow:0 2px 1px rgba(0,0,0,.384);cursor:pointer}button:active{box-shadow:0 0 0 rgba(0,0,0,.384)}
     </style>
   </head>
   <body>
@@ -216,21 +26,11 @@
     <h2></h2>
     <h3></h3>
     <button data-html2canvas-ignore type="button" id="buton">
-      Download Voucher
+      Download Coupon
     </button>
 
     <script>
-      function saveScreenshot(e) {
-        let t = document.createElement('a');
-        (t.download = 'mistery_sale_voucher.png'),
-          e.toBlob(function (e) {
-            (t.href = URL.createObjectURL(e)), t.click();
-          });
-      }
-      const Btn = document.querySelector('#buton');
-      Btn.addEventListener('click', function (e) {
-        html2canvas(document.body).then(saveScreenshot);
-      });
+function saveScreenshot(e){let t=document.createElement("a");t.download="mistery_sale_voucher.png",e.toBlob(function(e){t.href=URL.createObjectURL(e),t.click()})}const Btn=document.querySelector("#buton");Btn.addEventListener("click",function(e){html2canvas(document.body).then(saveScreenshot)});
     </script>
   </body>
 </html>
